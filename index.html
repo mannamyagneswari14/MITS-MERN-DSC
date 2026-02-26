@@ -1,38 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Practice Webpage</title>
 </head>
 <body>
+
+<header>
+    <h1>Practice Webpage</h1>
+    <nav>
+        <ul>
+            <li><a href="#header">Header</a></li>
+            <li><a href="#list">List</a></li>
+            <li><a href="#link">Link</a></li>
+            <li><a href="#table">Table</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="header">
     <h1>Hello World</h1>
     <h2>Hello World</h2>
     <h3>Hello World</h3>
     <h4>Hello World</h4>
     <h5>Hello World</h5>
     <h6>Hello World</h6>
-    <p><b>Lorem</b><i>ipsum</i>euh rejoierejfnrjn ertty asdert54ty</p>
-    <br>hruih rergh frgnjn</br>
+</section>
+
+<hr>
+
+<section id="list">
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+    </ul>
+</section>
+
+<hr>
+
+<section id="link">
+    <p><b>Lorem</b> <i>ipsum</i> text example</p>
+    <br>
     <img src="assets/papa.jpeg" alt="Tree">
-    <span>Hello hoi</span>
-    <div>Hello hiii</div>
-    <table border=""1>
+
+    <div>
+        <audio src="assets/audio/producesplatinum-vlog-hip-hop-483574.mp3" controls autoplay loop></audio>
+    </div>
+
+    <div>
+        <video src="assets/video/334302_small.mp4" controls autoplay loop></video>
+    </div>
+
+    <iframe src="https://rampex.in/" height="200" width="400"></iframe>
+</section>
+
+<hr>
+
+<span>Hello hoi</span>
+<div>Hello hiii</div>
+
+<section id="table">
+    <table border="1">
         <tr>
             <th>Reg.No</th>
             <th>Name</th>
-            <th>age</th>
+            <th>Age</th>
         </tr>
-        <body>
+        <tbody>
             <tr>
                 <td>101</td>
-                <td>yagna</td>
+                <td>Yagna</td>
                 <td>20</td>
             </tr>
             <tr>
                 <td>102</td>
-                <td>vasavi</td>
-                
+                <td>Vasavi</td>
                 <td>20</td>
             </tr>
-        </body>
+        </tbody>
     </table>
+</section>
+
+<hr>
+
+<form>
+    <label>Name:</label>
+    <input type="text" placeholder="Enter the name">
+    <br><br>
+    <label>Email:</label>
+    <input type="email" placeholder="Enter the mail">
+    <label>Password</label>
+    <input type="Password" placeholder="Enter the password">
+    <br><br>
+    <label>Gender</label>
+    <input type="radio" name="gender" value="male">male
+    <input type="radio" name="gender" value="female">female
+    <br><br>
+    <label>Skills:</label>
+    <input type="checkbox">MERN
+    <input type="checkbox">JAVA
+    <input type="checkbox">DS
+    <br><br>
+    <label>Country:</label>
+    <select>
+        <option value="select">--select--</option>
+        <option value="india">India</option>
+        <option value="india">china</option>
+        <option value="india">russia</option>
+
+    </select>
+    <br><br>
+    <label>Mobile Number:</label>
+    <input type="number" placeholder="enter the mobile number">
+    <br><br>
+    <label>DOB:</label>
+    <input type="date">
+    <br><br>
+    <label>Feedback</label>
+    <textarea rows="3" cols="20" placeholder="Enter the feedback"></textarea>
+    <br><br>
+    <label>Resume:</label>
+    <input type="file">
+    <br><br>
+    <input type="submit">
+    <input type="Result">
+    <button type="button">Click me</button>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+<br><br>
+<fieldset>
+    <legend>Student Deatils</legend>
+    <label>Name:</label>
+    <input type="text" placeholder="Enter the name">
+</fieldset>
+
+<footer>
+    <p style="text-align:center;">@2026 MITS Practice Website</p>
+</footer>
+
 </body>
 </html>
