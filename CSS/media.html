@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Example</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+        }
+
+        .box{
+            background-color: green;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        /* 📱 Mobile screen */
+        @media (max-width: 600px){
+            .box{
+                background-color: red;
+                font-size: 20px;
+            }
+        }
+
+        /* 💻 Tablet screen */
+        @media (min-width: 601px) and (max-width: 992px){
+            .box{
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        Resize the screen to see changes
+    </div>
+
+</body>
+</html>
