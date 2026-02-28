@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Java Script</title>
     <link rel="icon" href="../assets/papa.jpeg">
 </head>
 <body>
-    <script src="./script.js"></script>
+    <p id="para">Lorem ipsum dolor sit amet.</p>
+    <ul id="list">
+
+    </ul>
+    <button id="btn">click</button>
+    <!-- <p class="para1">Lorem ipsum dolor sit amet.</p> -->
+    <script>
+       // document.getElementById("para").textContent="Hello World"
+        // var para=document.getElementById("para");
+        // console.log(para);
+        // para.style.color="red";
+        // para.style.backgroundColor="green";
+        // para.style.fontSize="20px";
+        
+        // const li=document.createElement("li");
+        // li.innerText="New li element";
+        // document.getElementById("list").append(li);
+
+        const btn=document.getElementById("btn");
+        btn.addEventListener("click",function(){
+            const li=document.createElement("li");
+            li.innerText="New li Element";
+            document.getElementById("list").append(li);
+        })
+    </script>
 </body>
 </html>
