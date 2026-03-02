@@ -221,3 +221,60 @@
 // console.log(a);
 // console.log(b);
 
+//promise
+// const promise=new Promise((resolve,reject)=>{
+//     var suc=true;
+//     if(suc){
+//         resolve("Task completed");
+//     }
+//     else{
+//         reject("Task failed");
+//     }
+// })
+// promise.then((res)=>{
+//     console.log(res);
+// }).catch((err)=>{
+//     console.log(err);
+// })
+// //setTimeout
+// const promise2=new Promise((resolve,reject)=>{
+//     var suc=true;
+//     if(suc){
+//         setTimeout(()=>{
+//             resolve("Task completed after 2 seconds");
+//         },2000);
+//     }
+//     else{
+//         reject("Task failed");
+//     }
+// })
+// promise2.then((res)=>{
+//     console.log(res);
+// }).catch((err)=>{
+//     console.log(err);
+// })
+
+// //setInterval
+// let count=1;
+
+//fetch
+const getData=() => {
+    return fetch("https://jsonplaceholder.typicode.com/users")
+}
+getData().then((res)=>res.json()).then((data)=>{
+    console.log(data)
+}).catch((err)=>{
+    console.log(err)
+});
+
+//async await
+const getData2=async()=>{
+    try{
+        const res=await fetch("https://jsonplaceholder.typicode.com/users");
+        const data=await res.json();
+        console.log(data);
+    }catch(err){
+        console.log(err);
+    }   
+}
+getData2();
